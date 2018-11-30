@@ -46,7 +46,7 @@ def printName():
 def printName2(event):
     print("Hello")
 
-root=tkinter.tk()
+root=tkinter.Tk()
 one = tkinter.Label(root, text = "Name")
 two = tkinter.Label(root, text = "Password")
 button = tkinter.Button(root, text = "Print", command = printName)
