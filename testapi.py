@@ -1,6 +1,6 @@
 import requests
 import datetime
-import Tkinter
+import tkinter
 import matplotlib.pyplot as plt
 import sys
 import numpy as np
@@ -46,23 +46,23 @@ def printName():
 def printName2(event):
     print("Hello")
 
-root=Tkinter.Tk()
-one = Tkinter.Label(root, text = "Name")
-two = Tkinter.Label(root, text = "Password")
-button = Tkinter.Button(root, text = "Print", command = printName)
-button2 = Tkinter.Button(root, text = "Print2")
+root=tkinter.tk()
+one = tkinter.Label(root, text = "Name")
+two = tkinter.Label(root, text = "Password")
+button = tkinter.Button(root, text = "Print", command = printName)
+button2 = tkinter.Button(root, text = "Print2")
 button2.bind("<Button-1>", printName2)
 button2.grid(row = 3, column = 1)
-entry_1 = Tkinter.Entry(root)
-entry_2 = Tkinter.Entry(root)
+entry_1 = tkinter.Entry(root)
+entry_2 = tkinter.Entry(root)
 
-one.grid(row = 0, column = 0, sticky = Tkinter.E)
-two.grid(row = 1, column = 0, sticky = Tkinter.E)
+one.grid(row = 0, column = 0, sticky = tkinter.E)
+two.grid(row = 1, column = 0, sticky = tkinter.E)
 
 entry_1.grid(row = 0, column = 1)
 entry_2.grid(row = 1, column = 1)
 
-c = Tkinter.Checkbutton(root, text = "do you are")
+c = tkinter.Checkbutton(root, text = "do you are")
 c.grid(columnspan = 2)
 button.grid(row = 2, column = 0)
 #labell=tkinter.Label(root,text=timeer)
